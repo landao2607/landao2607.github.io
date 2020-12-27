@@ -613,13 +613,14 @@ nav{
 				transform: translateX(-10px);
 			}
 		}
+		/*
 		@media(max-width:400px){
 			.s-box{
 				width: 100%;
 				height:400px;
 			}
 		}
-
+*/
 		#myImg {
 			border-radius: 5px;
 			cursor: pointer;
