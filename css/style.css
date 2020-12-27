@@ -3,7 +3,7 @@
 body{
 	margin:0px;
 	padding:0px;
-	background-color: #f8e9a1;
+	background-color: #19181a;
 }
 ul{
 	list-style:none;
@@ -20,8 +20,8 @@ a{
 	background-size: 1330px;
 	background-position: right bottom;
 	background-repeat: no-repeat;
-	background-image: url(""); /*../images/bg.png*/
-	background-color: #A8D0E6;
+	background-image: url("");
+	background-color: #19181a;
 }
 nav{
 	display:flex;
@@ -37,7 +37,7 @@ nav{
 	width:100%;
 	box-sizing: border-box;
 	padding: 10px 50px;
-	background-color:#F4F7FF;
+	background-color: rgba(255,255,255,0.5) /*transparent background color*/
 	box-shadow:2px 2px 12px rgba(0,0,0,0.05);
 	z-index: 1;
 }
@@ -47,17 +47,27 @@ nav{
 }
 .menu li a{
 	padding: 10px 15px;
-	color:#24305e;
+	color:#DCDCDC; /*white color*/
 	font-size: 12px;
 
 }
-.lang{
-	color:#24305e;
+
+.social a{
+	margin: 3px 3px;
 }
+.social i{
+	color: #DCDCDC; /*white*/
+	font-size: 16px;
+}
+.social a:hover i{
+	color: #DBB04AFF; /*yellow*/
+	transition: all ease 0.5s;
+}
+
 .logo{
 	font-size: 25px;
 	font-weight: bold;
-	color:#24305e;
+	color:#DBB04AFF; /*yellow*/
 	font-family:'Roboto', sans-serif;
 }
 .toggle{
@@ -65,7 +75,7 @@ nav{
 }
 .active a,
 .menu li a:hover{
-	background-color:#24305e;
+	background-color:#DBB04AFF; /*yellow*/
 	color:#FFF!important;
 	font-weight: bold;
 	transition: all ease 0.4s;
@@ -87,7 +97,7 @@ nav{
 	font-size: 40px;
 	margin:0px;
 	letter-spacing: 3px;
-	color:#24305e;
+	color:#DCDCDC;
 }
 .cv-btn{
 	width:200px;
@@ -95,101 +105,16 @@ nav{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background-color: #24305e;
+	background-color: #DBB04AFF;/*yellow*/
 	color:#FFFFFF;
 }
 .cv-btn:hover{
 	background-color: #11225E;
 	transition: all ease 0.5s;
 }
-.black-line {
-	align-self: end;
-	width: 50%;
-	height: 15%;
-	margin-bottom: 4em;
-	position: absolute;
-	bottom:0px;
-	left: -3%;
-	border-right: 1px solid  rgba(41,41,41,0.30);
-}
-
-.black-line::after{
-	content: ' ';
-	position: absolute;
-	width: 0;
-	height: 0;
-	border-style: solid;
-	border-width: 11px 11px 0 11px;
-	border-color:  #24305e transparent transparent transparent;
-	right: -.7em;
-	bottom: -2px;
-}
 
 
-.social{
-	position: absolute;
-	left: 100px;
-	bottom: 50px;
-	display: flex;
 
-}
-.social a{
-	margin: 6px 6px;
-
-}
-.social i{
-	color:rgba(18,17,17,0.40);
-	font-size: 16px;
-}
-.social a:hover i{
-	color: #24305e;
-	transition: all ease 0.5s;
-}
-#about{
-	width:100%;
-	height: 100vh;
-	background-color:#24305e;
-	box-sizing: border-box;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	padding: 50px 5% 0px 5%;
-	position: relative;
-}
-.about-text{
-	font-family: 'Roboto', sans-serif;
-	width: 50%;
-}
-.about-text h1{
-	font-size: 5rem;
-	color: #f76c6c;
-}
-.about-text h2{
-	font-size: 3rem;
-	color:#FFFFFF;
-	font-weight: 400;
-}
-.about-text h1,h2{
-	margin: 0px;
-	padding: 0px;
-}
-.about-text p{
-	font-size: 1.2rem;
-	color:rgba(255,255,255,0.90);
-
-}
-.about-text button{
-	width: 180px;
-	height: 40px;
-	border-radius: 20px;
-	border: none;
-	outline: none;
-	background-color: #f76c6c;
-}
-.about-text button:hover{
-	background-color: #E54242;
-	transition: all ease 0.3s;
-}
 #experiences{
 	width:100%;
 	height:100vh;
@@ -204,17 +129,11 @@ nav{
 }
 
 .e-heading h1{
-	color:#24305e;
-	font-size: 3rem;
+	color:#DBB04AFF; /*yellow*/
+	font-size: 2rem;
 	margin: 0px;
 	padding: 0px;
 
-}
-.e-heading p{
-	color: #374785;
-	font-size: 1rem;
-	margin: 0px;
-	padding: 0px;
 }
 .e-heading{
 	text-align: center;
@@ -308,7 +227,7 @@ nav{
 	color:#FFFFFF;
 	font-weight: 400;
 	padding: 10px 20px;
-	background-color: #24305e;
+	background-color: #DBB04AFF; /*yellow*/
 	letter-spacing: 2px;
 	border-radius: 3px;
 	box-shadow: 2px 2px 20px rgba(0,0,0,0.1);
@@ -380,7 +299,7 @@ nav{
 	justify-content:center;
 	align-items: center;
 	height: 200px;
-	background-color: #A8D0E6;
+	background-color: #DBB04AFF; /*yellow background*/
 	margin: 20px 0px;
 	box-sizing: border-box;
 	box-shadow:2px 0px 20px rgba(0,0,0,0.4);
@@ -425,7 +344,7 @@ nav{
 	display: flex;
 	width: 70%;
 	height: 60vh;
-	background-color: #24305e;
+	background-color: #1F1F1F;
 	box-shadow: 2px 12px 20px rgba(0,0,0,0.2);
 	border: 1px solid rgba(255,255,255,0.01)
 }
@@ -556,6 +475,7 @@ nav{
 		}
 
 	}
+
 	@media(max-width:970px){
 		#main{
 			background-image: none !important;
@@ -566,26 +486,8 @@ nav{
 			top: 50%;
 			transform: translate(-50%,-50%);
 		}
-		.about-model{
-			display: none;
-		}
-		#about{
-			justify-content: center;
-			padding-top: 0px;
-		}
-		.about-text{
-			width: 90%;
-		}
-		.about-text h1{
-			font-size:4rem;
-		}
-
-		.p-container{
-			width:100%;
-
-		}
-
 	}
+
 	@media(max-width:900px){
 		.toggle{
 			display:block;
@@ -640,7 +542,6 @@ nav{
 
 		nav ul li a:hover{
 			background-color:rgba(27,29,32,0.15);
-
 		}
 
 
@@ -698,8 +599,6 @@ nav{
 		#contact-form form h1{
 			margin:5px 0px;
 		}
-
-
 	}
 
 	footer {
@@ -722,10 +621,6 @@ nav{
 			.name{
 				width:60%;
 			}
-
-			.black-line{
-				margin-bottom: 20px;
-			}
 			.social{
 				left: 30px;
 				transform: translateX(-10px);
@@ -746,47 +641,8 @@ nav{
 
 		#myImg:hover {opacity: 0.7;}
 
-		/* The Modal (background) */
-		.modal {
-			display: none; /* Hidden by default */
-			position: fixed; /* Stay in place */
-			z-index: 1; /* Sit on top */
-			padding-top: 100px; /* Location of the box */
-			left: 0;
-			top: 0;
-			width: 100%; /* Full width */
-			height: 100%; /* Full height */
-			overflow: auto; /* Enable scroll if needed */
-			background-color: rgb(0,0,0); /* Fallback color */
-			background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
-		}
 
-		/* Modal Content (Image) */
-		.modal-content {
-			margin: auto;
-			display: block;
-			width: 80%;
-			max-width: 700px;
-		}
 
-		/* Caption of Modal Image (Image Text) - Same Width as the Image */
-		#caption {
-			margin: auto;
-			display: block;
-			width: 80%;
-			max-width: 700px;
-			text-align: center;
-			color: #ccc;
-			padding: 10px 0;
-			height: 150px;
-		}
-
-		/* Add Animation - Zoom in the Modal */
-		.modal-content, #caption {
-			animation-name: zoom;
-			animation-duration: 0.6s;
-		}
-		
 		@keyframes zoom {
 			from {transform:scale(0)}
 			to {transform:scale(1)}
