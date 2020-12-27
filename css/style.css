@@ -497,7 +497,7 @@ nav{
 			font-family: fontAwesome;
 			line-height: 0px;
 			margin-left:-30px;
-			color: #DBB04AFF /*yellow menu bar in mobile*/
+			color: #DBB04AFF /*yellow menu bar in smaller screen*/
 		}
 		.toggle.active:before{
 			content:'\f00d' !important;
@@ -561,7 +561,6 @@ nav{
 			height: auto;
 			box-sizing: border-box;
 		}
-
 
 		#contact-form form {
 			flex-direction: column;
