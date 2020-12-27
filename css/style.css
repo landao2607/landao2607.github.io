@@ -49,7 +49,6 @@ nav{
 	padding: 10px 15px;
 	color:#DCDCDC; /*white color*/
 	font-size: 12px;
-
 }
 
 .social a{
@@ -87,10 +86,12 @@ nav{
 	left: 20%;
 	top: 50%;
 	transform: translate(-20%,-50%);
+	/*text-align: center;*/
 }
 .name p:nth-child(1),.name .details{
 	color:#6c707c;
 	font-size: 16px;
+	/*text-align: center;*/
 }
 .name h1{
 	font-family: 'Poppins', sans-serif;
@@ -98,6 +99,7 @@ nav{
 	margin:0px;
 	letter-spacing: 3px;
 	color:#DCDCDC;
+	/*text-align: center;*/
 }
 .cv-btn{
 	width:200px;
@@ -107,13 +109,12 @@ nav{
 	align-items: center;
 	background-color: #DBB04AFF;/*yellow*/
 	color:#FFFFFF;
+	align-items: center;
 }
 .cv-btn:hover{
-	background-color: #11225E;
+	background-color: #B29515; /*dark yellow*/
 	transition: all ease 0.5s;
 }
-
-
 
 #experiences{
 	width:100%;
@@ -455,21 +456,7 @@ nav{
 			top: 50%;
 			transform: translate(-10%,-50%);
 		}
-		.about-model img{
-			height:400px;
-		}
-		#services{
-			height:auto;
-		}
-		.b-container{
-			flex-wrap: wrap;
-		}
-		.s-box{
-			flex-grow: 1;
-		}
-		.s-b-img img{
-			object-fit:cover;
-		}
+
 		#contact-form form{
 			width:95% !important;
 		}
