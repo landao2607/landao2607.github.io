@@ -86,12 +86,12 @@ nav{
 	left: 20%;
 	top: 50%;
 	transform: translate(-20%,-50%);
-	/*text-align: center;*/
+	text-align: center;
 }
 .name p:nth-child(1),.name .details{
 	color:#6c707c;
 	font-size: 16px;
-	/*text-align: center;*/
+	text-align: center;
 }
 .name h1{
 	font-family: 'Poppins', sans-serif;
@@ -99,7 +99,7 @@ nav{
 	margin:0px;
 	letter-spacing: 3px;
 	color:#DCDCDC;
-	/*text-align: center;*/
+	text-align: center;
 }
 .cv-btn{
 	width:200px;
@@ -109,7 +109,6 @@ nav{
 	align-items: center;
 	background-color: #DBB04AFF;/*yellow*/
 	color:#FFFFFF;
-	align-items: center;
 }
 .cv-btn:hover{
 	background-color: #B29515; /*dark yellow*/
@@ -446,6 +445,8 @@ nav{
 		transform: scale(1.04);
 		transition: all ease 0.1s;
 	}
+
+/* THE RESPONSIVE PART */
 	@media(max-width:1190px){
 		#main{
 			background-size: 1150px !important;
@@ -457,6 +458,18 @@ nav{
 			transform: translate(-10%,-50%);
 		}
 
+		#experiences{
+			height:auto;
+		}
+		.b-container{
+			flex-wrap: wrap;
+		}
+		.e-box{
+			flex-grow: 1;
+		}
+		.e-b-img img{
+			object-fit:cover;
+		}
 		#contact-form form{
 			width:95% !important;
 		}
@@ -466,8 +479,8 @@ nav{
 	@media(max-width:970px){
 		#main{
 			background-image: none !important;
-
 		}
+
 		.name{
 			left: 50%;
 			top: 50%;
@@ -484,11 +497,12 @@ nav{
 			font-family: fontAwesome;
 			line-height: 0px;
 			margin-left:-30px;
+			color: #DBB04AFF /*yellow menu bar in mobile*/
 		}
 		.toggle.active:before{
 			content:'\f00d' !important;
-
 		}
+
 		nav{
 			padding:10px 30px;
 		}
@@ -613,14 +627,7 @@ nav{
 				transform: translateX(-10px);
 			}
 		}
-		/*
-		@media(max-width:400px){
-			.s-box{
-				width: 100%;
-				height:400px;
-			}
-		}
-*/
+
 		#myImg {
 			border-radius: 5px;
 			cursor: pointer;
