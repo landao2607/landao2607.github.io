@@ -280,17 +280,13 @@ nav{
 	margin: 0px;
 	padding: 0px;
 	letter-spacing: 2px;
-
 }
 .overlay-text p{
 	font-size: 1.0rem;
 	margin: 0px;
-
-
 }
 .p-box:hover .overlay-text{
 	display: flex;
-
 }
 #contact-btn{
 	width: 100%;
@@ -327,10 +323,11 @@ nav{
 	box-shadow: 2px 5px 6px rgba(0,0,0,0.2);
 }
 #contact-btn button:hover{
-	background-color: #E54242;
+	background-color: #E54242; /*dark red*/
 	color: #000000;
 	transition: all ease 0.5s;
 	font-weight: bold;
+	cursor: pointer;
 }
 #contact-form{
 	width: 100%;
@@ -368,7 +365,7 @@ nav{
 .contact-right button{
 	width: 100%;
 	height: 50px;
-	background-color: #f76c6c;
+	background-color: #f76c6c; /*red*/
 	font-weight: bold;
 	outline: none;
 	border: none;
@@ -377,11 +374,17 @@ nav{
 	font-size: 14px;
 	text-transform: uppercase;
 	letter-spacing: 2px;
-
 }
+
+.contact-right button:hover{
+	background-color: #E54242; /*dark red*/
+	transition: all ease 0.5s;
+	cursor: pointer;
+}
+
 .c-l-heading{
 	font-family: 'Roboto', sans-serif;
-	color:#FFFFFF;
+	color:#DBB04AFF; /*yellow*/
 	font-size: 3rem;
 	letter-spacing: 2px;
 	font-weight: 400;
