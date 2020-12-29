@@ -81,12 +81,13 @@ nav{
 }
 .name{
 	font-family: 'Roboto', sans-serif;
-	width: 60%;
+	width: 50%;
 	position: absolute;
-	left: 20%;
-	top: 50%;
-	transform: translate(0%,-70%); /*center the text*/
+	left: 50%;
+	top: 40%;
+	transform: translate(-50%,-50%); /*center the text*/
 	text-align: center;
+	margin-right: -50%;
 }
 .name p:nth-child(1),.name .details{
 	color:#6c707c; /*grey*/
@@ -103,8 +104,6 @@ nav{
 	/*margin-top: 130px; /*center the emoji vertically
 	margin-left: 550px; /*center the emoji horizontally*/
 	position: relative;
-	left: 47%;
-	top: 100%;
 }
 
 @keyframes wave-animation {
@@ -128,12 +127,11 @@ nav{
 }
 
 .cv-container {
-  position: absolute;
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-	margin-top: 30px;
-	margin-left: 370px; /*center the button horizontally*/
+	margin-top: 50px;
 }
 
 .cv-center {
@@ -526,7 +524,7 @@ a {
 			background-size: 1150px !important;
 
 		}
-		.name .wave{
+		.name {
 			left: 10%;
 			top: 50%;
 			transform: translate(-10%,-50%);
@@ -555,7 +553,7 @@ a {
 			background-image: none !important;
 		}
 
-		.name .wave{
+		.name {
 			left: 50%;
 			top: 50%;
 			transform: translate(-50%,-50%);
