@@ -100,8 +100,11 @@ nav{
   animation-iteration-count: infinite;  /* Never stop waving :) */
   transform-origin: 70% 70%;       /* Pivot around the bottom-left palm */
   display: inline-block;
-	margin-top: 130px; /*center the emoji vertically*/
+	/*margin-top: 130px; /*center the emoji vertically
 	margin-left: 550px; /*center the emoji horizontally*/
+	position: relative;
+	left: 47%;
+	top: 100%;
 }
 
 @keyframes wave-animation {
@@ -508,13 +511,22 @@ a {
 		transition: all ease 0.1s;
 	}
 
+	footer p{
+		display: inline-block;
+		width: 100%;
+		font-family: 'Roboto', sans-serif;
+		font-size: 15px;
+		color: #6c707c !important; /*grey*/
+    text-decoration: none;
+	}
+
 /* THE RESPONSIVE PART */
 	@media(max-width:1190px){
 		#main{
 			background-size: 1150px !important;
 
 		}
-		.name{
+		.name .wave{
 			left: 10%;
 			top: 50%;
 			transform: translate(-10%,-50%);
@@ -543,7 +555,7 @@ a {
 			background-image: none !important;
 		}
 
-		.name{
+		.name .wave{
 			left: 50%;
 			top: 50%;
 			transform: translate(-50%,-50%);
@@ -663,14 +675,6 @@ a {
 		}
 	}
 
-	footer p{
-		display: inline-block;
-		width: 100%;
-		font-family: 'Roboto', sans-serif;
-		font-size: 15px;
-		color: #6c707c !important; /*grey*/
-    text-decoration: none;
-	}
 
 	@media(max-width:600px){
 		.p-container{
