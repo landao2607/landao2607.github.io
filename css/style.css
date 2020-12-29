@@ -38,7 +38,7 @@ nav{
 	box-sizing: border-box;
 	padding: 10px 50px;
 	background-color: rgba(255,255,255,0.5) /*transparent background color*/
-	box-shadow:2px 2px 12px rgba(0,0,0,0.05);
+	box-shadow: 2px 2px 12px rgba(0,0,0,0.05);
 	z-index: 1;
 }
 
@@ -48,7 +48,7 @@ nav{
 .menu li a{
 	padding: 10px 15px;
 	color:#DCDCDC; /*white color*/
-	font-size: 12px;
+	font-size: 13px;
 }
 
 .social a{
@@ -72,48 +72,124 @@ nav{
 .toggle{
 	display: none;
 }
-.active a,
+
 .menu li a:hover{
-	background-color:#DBB04AFF; /*yellow*/
+	border: 1px solid #DBB04AFF; /*yellow border*/
 	color:#FFF!important;
 	font-weight: bold;
 	transition: all ease 0.4s;
 }
 .name{
 	font-family: 'Roboto', sans-serif;
-	width: 500px;
+	width: 60%;
 	position: absolute;
 	left: 20%;
 	top: 50%;
-	transform: translate(-20%,-50%);
+	transform: translate(0%,-70%); /*center the text*/
 	text-align: center;
 }
 .name p:nth-child(1),.name .details{
-	color:#6c707c;
-	font-size: 16px;
+	color:#6c707c; /*grey*/
+	font-size: 20px;
 	text-align: center;
 }
+
+.wave {
+  animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
+  animation-duration: 2.5s;        /* Change to speed up or slow down */
+  animation-iteration-count: infinite;  /* Never stop waving :) */
+  transform-origin: 70% 70%;       /* Pivot around the bottom-left palm */
+  display: inline-block;
+	margin-top: 130px; /*center the emoji vertically*/
+	margin-left: 550px; /*center the emoji horizontally*/
+}
+
+@keyframes wave-animation {
+    0% { transform: rotate( 0.0deg) }
+   10% { transform: rotate(14.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
+   20% { transform: rotate(-8.0deg) }
+   30% { transform: rotate(14.0deg) }
+   40% { transform: rotate(-4.0deg) }
+   50% { transform: rotate(10.0deg) }
+   60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
+  100% { transform: rotate( 0.0deg) }
+}
+
 .name h1{
-	font-family: 'Poppins', sans-serif;
-	font-size: 40px;
+	font-family: 'Roboto', sans-serif;
+	font-size: 30px;
 	margin:0px;
-	letter-spacing: 3px;
-	color:#DCDCDC;
+	letter-spacing: 1px;
+	color:#DCDCDC; /*white*/
 	text-align: center;
 }
-.cv-btn{
-	width:200px;
+
+.cv-container {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+	margin-top: 30px;
+	margin-left: 370px; /*center the button horizontally*/
+}
+
+.cv-center {
+  width: 150px;
+  height: 45px;
+  position: absolute;
+}
+
+.cv-btn {
+	width:150px;
 	height: 45px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background-color: #DBB04AFF;/*yellow*/
+  cursor: pointer;
+  background: transparent;
+  border: 1px solid #E54242; /*dark red*/
+  outline: none;
+  transition: 1s ease-in-out;
+}
+
+svg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  fill: none;
+  stroke: #fff;
+  stroke-dasharray: 150 480;
+  stroke-dashoffset: 150;
+  transition: 1s ease-in-out;
+}
+
+.cv-btn:hover {
+  transition: 1s ease-in-out;
+  background: #f76c6c; /*red*/
+}
+
+.cv-btn:hover svg {
+  stroke-dashoffset: -480;
+}
+
+.cv-btn span {
+  color: #DCDCDC; /*white*/
+  font-size: 18px;
+  font-weight: 100;
+}
+
+/*
+.cv-btn{
+	width:150px;
+	height: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #f76c6c;/*red
 	color:#FFFFFF;
+	margin-top: 30px;
 }
-.cv-btn:hover{
-	background-color: #B29515; /*dark yellow*/
-	transition: all ease 0.5s;
-}
+*/
 
 #experiences{
 	width:100%;
@@ -288,54 +364,36 @@ nav{
 .p-box:hover .overlay-text{
 	display: flex;
 }
-#contact-btn{
-	width: 100%;
-	display: flex;
-	flex-direction: column;
-	justify-content:center;
-	align-items: center;
-	height: 200px;
-	background-color: #DBB04AFF; /*yellow background*/
-	margin: 20px 0px;
-	box-sizing: border-box;
-	box-shadow:2px 0px 20px rgba(0,0,0,0.4);
-}
-.c-b-heading{
-	font-size: 2rem;
-	color:#1E1E1E;
-	font-family: 'Roboto', sans-serif;
-	margin: 10px;
-	padding: 5px;
-	letter-spacing: 4px;
-	border-bottom: 2px solid #1E1E1E;
 
-}
-#contact-btn button{
-	color: #FFFFFF;
-	font-size: 1rem;
-	font-family: 'Roboto', sans-serif;
-	width: 150px;
-	height: 40px;
-	margin: 10px;
-	background-color: #f76c6c;
-	border: none;
-	outline: none;
-	box-shadow: 2px 5px 6px rgba(0,0,0,0.2);
-}
-#contact-btn button:hover{
-	background-color: #E54242; /*dark red*/
-	color: #000000;
-	transition: all ease 0.5s;
-	font-weight: bold;
-}
 #contact-form{
 	width: 100%;
 	height: 90vh;
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-
+	font-family: 'Roboto', sans-serif;
+	padding-top: 10px;
 }
+
+.c-heading h1{
+	color:#DBB04AFF; /*yellow*/
+	font-size: 2rem;
+	margin: 3px;
+	margin-bottom: 25px;
+	padding: 0px;
+}
+
+a {
+    color: #DBB04AFF; /*yellow*/
+    text-decoration: none;
+}
+
+.c-heading{
+	text-align: center;
+	margin: 15px;
+}
+
 #contact-form form{
 	display: flex;
 	width: 70%;
@@ -384,7 +442,7 @@ nav{
 .c-l-heading{
 	font-family: 'Roboto', sans-serif;
 	color:#DBB04AFF; /*yellow*/
-	font-size: 3rem;
+	font-size: 2.5rem;
 	letter-spacing: 2px;
 	font-weight: 400;
 
@@ -436,6 +494,8 @@ nav{
 		box-sizing: border-box;
 		color:#EBEBEB;
 		font-size: 16px;
+		resize: none;
+		font-family: 'Roboto', sans-serif;
 	}
 	.contact-right textarea::placeholder{
 		color:#EBEBEB;
@@ -603,12 +663,13 @@ nav{
 		}
 	}
 
-	footer {
+	footer p{
 		display: inline-block;
 		width: 100%;
 		font-family: 'Roboto', sans-serif;
 		font-size: 15px;
-		color: #24305e;
+		color: #6c707c !important; /*grey*/
+    text-decoration: none;
 	}
 
 	@media(max-width:600px){

@@ -2,17 +2,18 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Lan Portfolio Website</title>
+	<title>Lan Dao</title>
 	<meta http-equiv="X-UA-Compatible" content="IE-edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!--title-icon--------->
-	<link rel="shortcut icon" href="images/icon.png">
+	<link rel="shortcut icon" href="images/waving-emoji-icon.png">
 	<link rel="stylesheet" type="text/css" href="css/style.css"/>
 	<!--Google Fonts-------->
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,700;1,100&display=swap" rel="stylesheet">
 	<!--using FontAwesome---------------->
 	<script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script> <!--for animation-->
 </head>
 
 <body>
@@ -39,15 +40,26 @@
 			</div>
 		</nav>
 		<!--name--------------------------->
+		<!--wave emoji--->
+		<p style="font-size:30px"><span class="wave">👋</span></p>
 		<div class="name">
-			<!--hello------->
-			<p>Hello</p>
-			<!--name--->
-			<h1>I'm <font color="#f76c6c">Lan</font> Dao</h1>
+			<!--intro--->
+			<h1>Hello! My name is Lan Dao, but you can just call me Lan. I'm a junior in college. </h1>
 			<!--details--------------->
-			<p class="details">Short intro about me</p>
+			<p class="details">I love music, travel, good coffee, and different cultures.</p>
 			<!--cv button-------------------->
-			<a href="LanDao_Resume.pdf" target="_blank" class="cv-btn">View CV</a>
+			<div class="cv-container">
+				<div class="cv-center">
+					<button class="cv-btn">
+						<a href="LanDao_Resume.pdf" target="_blank">
+						<svg width="150px" height="45px" viewBox="0 0 150 45" class="border">
+							<polyline points="149,1 149,44 1,44 1,1 149,1" class="bg-line" />
+							<polyline points="149,1 149,44 1,44 1,1 149,1" class="hl-line" />
+						</svg>
+						<span>View My CV</span>
+					</button>
+				</div>
+			</div>
 		</div>
 	</section>
 
@@ -143,16 +155,13 @@
 	</div>
 </section>
 
-<!--Contact-btn------------------>
-<section id="contact-btn">
-	<!--heading-------------->
-	<h1 class="c-b-heading">Let's work together</h1>
-	<!--btn-------->
-	<button><a href="mailto:ldao@millikin.edu">Contact Me :)</a></button>
-</section>
-
 <!--contact-form------------------->
 <section id="contact-form">
+	<div class="c-heading">
+		<h1>Contact</h1>
+		<h1 style="color:#DCDCDC;font-size:17px;font-family:'Roboto', sans-serif;">Let's work together. &#128522;Get in touch via the form below, or by emailing <a href="mailto:ldao@millikin.edu">ldao@millikin.edu</a>.</h1>
+	</div>
+
 	<form>
 		<!--left--------------------------------------->
 		<div class="contact-left">
