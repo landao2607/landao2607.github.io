@@ -14,43 +14,66 @@
 	<!--using FontAwesome---------------->
 	<script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script> <!--for animation-->
-	<script src="//code.jquery.com/jquery.min.js"></script>
+	<!--<script src="https://code.jquery.com/jquery-1.10.2.js"></script>--> <!--for nav-->
 </head>
 
 <body>
-<section id="main">
-	<!--navigation-------------------------------->
-	<div id="nav-placeholder"></div>
+	<!--nav across pages
+	<div id="nav-placeholder">
+
+	</div>
+
 	<script>
 	$(function(){
-			$("#nav-placeholder").load("nav.html");
-		});
-		</script>
+		$("#nav-placeholder").load("nav.html");
+	});
 	</script>
-	<!--end of Navigation bar-->
-	<!--name--------------------------->
-	<div class="name">
-		<!--wave emoji--->
-		<p style="font-size:30px"><span class="wave">👋</span></p>
-		<!--intro--->
-		<h1>Hello! My name is Lan Dao, but you can just call me Lan. I'm a junior in college. </h1>
-		<!--details--------------->
-		<p class="details">I love music, travel, good coffee, and different cultures.</p>
-		<!--cv button-------------------->
-		<div class="cv-container">
-			<div class="cv-center">
-				<button class="cv-btn">
-					<a href="LanDao_Resume.pdf" target="_blank"></a>
-					<svg width="150px" height="45px" viewBox="0 0 150 45" class="border">
-						<polyline points="149,1 149,44 1,44 1,1 149,1" class="bg-line" />
-						<polyline points="149,1 149,44 1,44 1,1 149,1" class="hl-line" />
-					</svg>
-					<span>View my CV</span>
-				</button>
+-->
+	<section id="main">
+		<!--navigation-------------------------------->
+		<nav>
+			<!--logo--->
+			<a href="#" class="logo">LOGO</a>
+			<!--menu--------->
+			<div class="toggle"></div>
+			<ul class="menu">
+				<li class="active"><a href="index.html">About</a></li>
+				<li><a href="projects.html">Projects</a></li>
+				<li><a href="portfolio.html">Portfolio</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+			<!--social-->
+			<div class="social">
+				<a href="#"><a target="_blank" href="mailto:ldao@millikin.edu"><i class="far fa-envelope"></i></a>
+				<a href="#"><a target="_blank" href="https://github.com/landao2607" rel="http://www.github.com/"><i class="fab fa-github"></i></a>
+				<a href="#"><a target="_blank" href="https://www.linkedin.com/in/lanpdao/" rel="http://www.linkedin.com/"><i class="fab fa-linkedin"></i></a>
+				<a href="#"><a target="_blank" href="https://www.facebook.com/lanpdao/" rel="http://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+			</div>
+		</nav>
+
+		<!--name--------------------------->
+		<div class="name">
+			<!--wave emoji--->
+			<p style="font-size:30px"><span class="wave">👋</span></p>
+			<!--intro--->
+			<h1>Hello! My name is Lan Dao, but you can just call me Lan. I'm a junior in college. </h1>
+			<!--details--------------->
+			<p class="details">I love music, travel, good coffee, and different cultures.</p>
+			<!--cv button-------------------->
+			<div class="cv-container">
+				<div class="cv-center">
+					<button class="cv-btn">
+						<a href="LanDao_Resume.pdf" target="_blank"></a>
+						<svg width="150px" height="45px" viewBox="0 0 150 45" class="border">
+							<polyline points="149,1 149,44 1,44 1,1 149,1" class="bg-line" />
+							<polyline points="149,1 149,44 1,44 1,1 149,1" class="hl-line" />
+						</svg>
+						<span>View my CV</span>
+					</button>
+				</div>
 			</div>
 		</div>
-	</div>
-</section>
+	</section>
 
 <script type="text/javascript" src="js/JQuery3.3.1.js"></script>
 
