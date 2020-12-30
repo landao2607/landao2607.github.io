@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Lan Dao</title>
+	<title>About | Lan Dao</title>
 	<meta http-equiv="X-UA-Compatible" content="IE-edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!--title-icon--------->
@@ -14,188 +14,48 @@
 	<!--using FontAwesome---------------->
 	<script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script> <!--for animation-->
+	<script src="//code.jquery.com/jquery.min.js"></script>
 </head>
 
 <body>
 	<!--main------------------------>
-	<section id="main">
-		<!--navigation-------------------------------->
-		<nav>
-			<!--logo--->
-			<a href="#" class="logo">LOGO</a>
-			<!--menu--------->
-			<div class="toggle"></div>
-			<ul class="menu">
-				<li class="active"><a href="#main">About</a></li>
-				<li><a href="#projects">Projects</a></li>
-				<li><a href="#portfolio">Portfolio</a></li>
-				<li><a href="#contact-form">Contact</a></li>
-			</ul>
-			<!--social-->
-			<div class="social">
-				<a href="#"><a target="_blank" href="mailto:ldao@millikin.edu"><i class="far fa-envelope"></i></a>
-				<a href="#"><a target="_blank" href="https://github.com/landao2607" rel="http://www.github.com/"><i class="fab fa-github"></i></a>
-				<a href="#"><a target="_blank" href="https://www.linkedin.com/in/lanpdao/" rel="http://www.linkedin.com/"><i class="fab fa-linkedin"></i></a>
-				<a href="#"><a target="_blank" href="https://www.facebook.com/lanpdao/" rel="http://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
-			</div>
-		</nav>
+	<div id="nav-placeholder"></div>
+	<script>
+	$(function(){
+      $("#nav-placeholder").load("nav.html");
+    });
+    </script>
+</script>
+<!--end of Navigation bar-->
+<section id="main">
+	<!--navigation-------------------------------->
 
-		<!--name--------------------------->
-		<div class="name">
-			<!--wave emoji--->
-			<p style="font-size:30px"><span class="wave">👋</span></p>
-			<!--intro--->
-			<h1>Hello! My name is Lan Dao, but you can just call me Lan. I'm a junior in college. </h1>
-			<!--details--------------->
-			<p class="details">I love music, travel, good coffee, and different cultures.</p>
-			<!--cv button-------------------->
-			<div class="cv-container">
-				<div class="cv-center">
-					<button class="cv-btn">
-						<a href="LanDao_Resume.pdf" target="_blank"></a>
-						<svg width="150px" height="45px" viewBox="0 0 150 45" class="border">
-							<polyline points="149,1 149,44 1,44 1,1 149,1" class="bg-line" />
-							<polyline points="149,1 149,44 1,44 1,1 149,1" class="hl-line" />
-						</svg>
-						<span>View my CV</span>
-					</button>
-				</div>
-			</div>
-		</div>
-	</section>
-
-<!--Projects aka Experiences-------------------->
-<section id="projects">
-	<!--heading-------------->
-	<div class="e-heading">
-		<h1>Projects</h1>
-	</div>
-	<!--services-box-container--------->
-	<div class="b-container">
-		<!--box-1---------------->
-		<div class="e-box">
-			<!--img------------->
-			<div class="e-b-img">
-				<!--type----------->
-				<div class="e-type">Data Analysis</div>
-				<!--name------->
-				<img src="images/database.png">
-			</div>
-			<!--text----------------->
-			<div class="e-b-text">
-				<a href="#">Intern at CIE</a>
-			</div>
-		</div>
-		<!--box-2---------------->
-		<div class="e-box">
-			<!--img------------->
-			<div class="e-b-img">
-				<!--type----------->
-				<div class="e-type">App Development</div>
-				<!--name------->
-				<img src="images/appdev.jpg">
-			</div>
-			<!--text----------------->
-			<div class="e-b-text">
-				<a href="#">budgetify</a>
-			</div>
-		</div>
-		<!--box-3---------------->
-		<div class="e-box">
-			<!--img------------->
-			<div class="e-b-img">
-				<!--type----------->
-				<div class="e-type">Web Development</div>
-				<!--name------->
-				<img src="images/extentions.png">
-			</div>
-			<!--text----------------->
-			<div class="e-b-text">
-				<a href="#">HoverXchange</a>
+	<!--name--------------------------->
+	<div class="name">
+		<!--wave emoji--->
+		<p style="font-size:30px"><span class="wave">👋</span></p>
+		<!--intro--->
+		<h1>Hello! My name is Lan Dao, but you can just call me Lan. I'm a junior in college. </h1>
+		<!--details--------------->
+		<p class="details">I love music, travel, good coffee, and different cultures.</p>
+		<!--cv button-------------------->
+		<div class="cv-container">
+			<div class="cv-center">
+				<button class="cv-btn">
+					<a href="LanDao_Resume.pdf" target="_blank"></a>
+					<svg width="150px" height="45px" viewBox="0 0 150 45" class="border">
+						<polyline points="149,1 149,44 1,44 1,1 149,1" class="bg-line" />
+						<polyline points="149,1 149,44 1,44 1,1 149,1" class="hl-line" />
+					</svg>
+					<span>View my CV</span>
+				</button>
 			</div>
 		</div>
 	</div>
-</section>
-
-<!--portfolio------------------->
-<section id="portfolio">
-	<!--heading----------->
-	<h1 class="p-headlind">Portfolio</h1>
-	<!--portfolio-container------------>
-	<div class="p-container">
-		<!--portfolio-box-1-------->
-		<div class="p-box">
-			<!--text--------->
-			<div class="overlay-text">
-				<h1>"Gentle Monster" Brand Poster</h1>
-				<p>Class Project</p>
-			</div>
-			<!--bg-img------------->
-			<img src="images/LD_GentleMonster.jpg">
-		</div>
-		<!--portfolio-box-2-------->
-		<div class="p-box">
-			<!--text--------->
-			<div class="overlay-text">
-				<h1>Personal Poster</h1>
-				<p>Class Project</p>
-			</div>
-			<!--bg-img------------->
-			<img src="images/LD_Personal.jpg">
-		</div>
-		<!--portfolio-box-3-------->
-		<div class="p-box">
-			<!--text--------->
-			<div class="overlay-text">
-				<h1>Hand Wash Label</h1>
-				<p>Class Project</p>
-			</div>
-			<!--bg-img------------->
-			<img src="images/LD_HandWash.jpg">
-		</div>
-	</div>
-</section>
-
-<!--contact-form------------------->
-<section id="contact-form">
-	<div class="c-heading">
-		<h1>Contact</h1>
-		<h1 style="color:#DCDCDC;font-size:17px;font-family:'Roboto', sans-serif; letter-spacing: 2px;">Let's talk!</h1>
-		<h1 style="color:#DCDCDC;font-size:17px;font-family:'Roboto', sans-serif; letter-spacing: 2px;">Please email me at <a href="mailto:ldao@millikin.edu">ldao@millikin.edu</a> or fill in the form so I know how to reach you.</h1>
-	</div>
-
-	<form>
-		<!--left--------------------------------------->
-		<div class="contact-left">
-			<h1 class="c-l-heading"><font style="border-bottom: 3px solid #f76c6c;">Writ</font>e me</h1>
-			<!--name-------->
-			<div class="f-name">
-				<font>Name</font>
-				<input type="text" placeholder="Full Name"/>
-			</div>
-			<!--email-------->
-			<div class="f-email">
-				<font>Email</font>
-				<input type="email" placeholder="Example@gmail.com"/>
-			</div>
-
-		</div>
-		<!--right------------------------------------------->
-		<div class="contact-right">
-			<!--message-------->
-			<div class="message">
-				<font>Message</font>
-				<textarea name="message" rows="5" cols="20" placeholder="Write Message..."></textarea>
-			</div>
-			<!--submit-btn------------>
-			<button>submit</button>
-		</div>
-
-	</form>
-
 </section>
 
 <script type="text/javascript" src="js/JQuery3.3.1.js"></script>
+
 <script type="text/javascript">
 
 /*Responsive Navigation*/
@@ -213,5 +73,6 @@ $(document).ready(function(){
 <footer>
 	<p align="center">&copy; 2020 Lan Dao</p>
 </footer>
+
 </body>
 </html>

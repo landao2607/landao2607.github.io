@@ -297,7 +297,6 @@ svg {
 	box-shadow: 2px 2px 20px rgba(0,0,0,0.1);
 }
 
-
 .p-box{
 	background-color: #1F1F1F;
 	overflow: hidden;
@@ -365,11 +364,12 @@ svg {
 }
 
 .c-heading h1{
-	color:#DBB04AFF; /*yellow*/
+	color:#DCDCDC; /*yellow*/
 	font-size: 2rem;
 	margin: 3px;
 	margin-bottom: 25px;
 	padding: 0px;
+	text-align: left;
 }
 
 a {

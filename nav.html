@@ -1,0 +1,40 @@
+
+	<!--main------------------------>
+	<section id="main">
+		<!--navigation-------------------------------->
+		<nav>
+			<!--logo--->
+			<a href="#" class="logo">LOGO</a>
+			<!--menu--------->
+			<div class="toggle"></div>
+			<ul class="menu">
+				<li class="active"><a href="index.html">About</a></li>
+				<li><a href="projects.html">Projects</a></li>
+				<li><a href="portfolio.html">Portfolio</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+			<!--social-->
+			<div class="social">
+				<a href="#"><a target="_blank" href="mailto:ldao@millikin.edu"><i class="far fa-envelope"></i></a>
+				<a href="#"><a target="_blank" href="https://github.com/landao2607" rel="http://www.github.com/"><i class="fab fa-github"></i></a>
+				<a href="#"><a target="_blank" href="https://www.linkedin.com/in/lanpdao/" rel="http://www.linkedin.com/"><i class="fab fa-linkedin"></i></a>
+				<a href="#"><a target="_blank" href="https://www.facebook.com/lanpdao/" rel="http://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+			</div>
+		</nav>
+	</section>
+
+<script type="text/javascript" src="js/JQuery3.3.1.js"></script>
+
+<script type="text/javascript">
+
+/*Responsive Navigation*/
+$(document).ready(function(){
+	$('.toggle').click(function(){
+		$('.toggle').toggleClass('active')
+
+		$('nav ul').toggleClass('active-menu')
+
+
+	})
+});
+</script>
