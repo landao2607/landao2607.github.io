@@ -521,14 +521,14 @@ a {
 	}
 
 	footer {
+		display: inline-block;
 		width: 100%;
 		font-family: 'Roboto', sans-serif;
 		font-size: 15px;
 		color: #6c707c !important; /*grey*/
     text-decoration: none;
-		display: flex;
-	  align-items: center;
-	  justify-content: center;
+		vertical-align: middle;
+		text-align: center;
 	}
 
 
