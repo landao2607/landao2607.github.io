@@ -520,7 +520,7 @@ a {
 		transition: all ease 0.1s;
 	}
 
-	footer {
+	footer p{
 		display: inline-block;
 		width: 100%;
 		font-family: 'Roboto', sans-serif;
