@@ -64,7 +64,7 @@ nav{
 }
 
 .logo{
-	font-size: 25px;
+	font-size: 30px;
 	font-weight: bold;
 	font-family: 'Pattaya', sans-serif;
 	background: linear-gradient( to right, #DCDCDC, #DBB04AFF); /*gradient text from white to yellow*/
@@ -85,6 +85,13 @@ nav{
 .current {
 	border: 1px solid #DBB04AFF; /*yellow border*/
 }
+
+@media screen and (max-width: 900px) {
+	.logo{
+		font-size: 18px;
+	}
+}
+
 .name{
 	font-family: 'Roboto', sans-serif;
 	width: 50%;
@@ -597,14 +604,14 @@ a {
 			position:absolute;
 			width: 100%;
 			height:auto;
-			box-sizing:border-box;
+			box-sizing: border-box;
 			background-color:#0F0F0F;
 			top: 50px;
 			left: 0;
 			transition: 0.5s;
 			overflow: hidden;
 			display: none !important;
-			border:3px solid #1F1F1F;
+			border: 3px solid #1F1F1F;
 		}
 
 		nav ul li a{
