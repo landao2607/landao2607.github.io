@@ -27,7 +27,6 @@ nav{
 	display:flex;
 	justify-content: space-between;
 	align-items: center;
-	text-transform: uppercase;
 	font-weight: 600;
 	letter-spacing: 2px;
 	font-family: 'Roboto', sans-serif;
@@ -49,6 +48,7 @@ nav{
 	padding: 10px 15px;
 	color:#DCDCDC; /*white color*/
 	font-size: 13px;
+	text-transform: uppercase;
 }
 
 .social a{
@@ -66,8 +66,10 @@ nav{
 .logo{
 	font-size: 25px;
 	font-weight: bold;
-	color:#DBB04AFF; /*yellow*/
-	font-family:'Roboto', sans-serif;
+	font-family: 'Pattaya', sans-serif;
+	background: linear-gradient( to right, #DCDCDC, #DBB04AFF); /*gradient text from white to yellow*/
+	-webkit-text-fill-color: transparent; /*gradient text from white to yellow*/
+  -webkit-background-clip: text; /*gradient text from white to yellow*/
 }
 .toggle{
 	display: none;
