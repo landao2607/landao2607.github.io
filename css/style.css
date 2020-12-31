@@ -520,14 +520,17 @@ a {
 		transition: all ease 0.1s;
 	}
 
-	footer p{
-		display: inline-block;
+	footer {
 		width: 100%;
 		font-family: 'Roboto', sans-serif;
 		font-size: 15px;
 		color: #6c707c !important; /*grey*/
     text-decoration: none;
+		display: flex;
+	  align-items: center;
+	  justify-content: center;
 	}
+
 
 /* THE RESPONSIVE PART */
 	@media(max-width:1190px){
