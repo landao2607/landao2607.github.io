@@ -10,6 +10,7 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css"/>
 	<!--Google Fonts-------->
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,700;1,100&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Pattaya&display=swap" rel="stylesheet">
 	<!--using FontAwesome---------------->
@@ -19,7 +20,7 @@
 
 <body>
 	<!--main------------------------>
-	<section id="main">
+	<section id="long-main">
 		<!--navigation-------------------------------->
 		<nav>
 			<!--logo--->
@@ -41,77 +42,76 @@
 			</div>
 		</nav>
 
-<!--Projects aka Experiences-------------------->
-<section id="projects">
-	<!--heading-------------->
-	<div class="e-heading">
-		<h1>Some projects that I worked and am currently working on...👩🏻‍💻</h1>
-	</div>
-	<!--services-box-container--------->
-	<div class="b-container">
-		<!--box-1---------------->
-		<div class="e-box">
-			<!--img------------->
-			<div class="e-b-img">
-				<!--type----------->
-				<div class="e-type">Data Analysis</div>
-				<!--name------->
-				<img src="images/database.png">
+		<!--Projects aka Experiences-------------------->
+		<section id="body-template">
+			<!--heading-------------->
+			<h1 class="headlind">Projects.</h1>
+			<!--services-box-container--------->
+			<div class="b-container">
+				<!--box-1---------------->
+				<div class="e-box">
+					<!--img------------->
+					<div class="e-b-img">
+						<!--type----------->
+						<div class="e-type">Data Analysis</div>
+						<!--name------->
+						<img src="images/database.png">
+					</div>
+					<!--text----------------->
+					<div class="e-b-text">
+						<a href="#">Intern at CIE</a>
+					</div>
+				</div>
+				<!--box-2---------------->
+				<div class="e-box">
+					<!--img------------->
+					<div class="e-b-img">
+						<!--type----------->
+						<div class="e-type">App Development</div>
+						<!--name------->
+						<img src="images/appdev.jpg">
+					</div>
+					<!--text----------------->
+					<div class="e-b-text">
+						<a href="#">budgetify</a>
+					</div>
+				</div>
+				<!--box-3---------------->
+				<div class="e-box">
+					<!--img------------->
+					<div class="e-b-img">
+						<!--type----------->
+						<div class="e-type">Web Development</div>
+						<!--name------->
+						<img src="images/extentions.png">
+					</div>
+					<!--text----------------->
+					<div class="e-b-text">
+						<a href="#">HoverXchange</a>
+					</div>
+				</div>
 			</div>
-			<!--text----------------->
-			<div class="e-b-text">
-				<a href="#">Intern at CIE</a>
-			</div>
-		</div>
-		<!--box-2---------------->
-		<div class="e-box">
-			<!--img------------->
-			<div class="e-b-img">
-				<!--type----------->
-				<div class="e-type">App Development</div>
-				<!--name------->
-				<img src="images/appdev.jpg">
-			</div>
-			<!--text----------------->
-			<div class="e-b-text">
-				<a href="#">budgetify</a>
-			</div>
-		</div>
-		<!--box-3---------------->
-		<div class="e-box">
-			<!--img------------->
-			<div class="e-b-img">
-				<!--type----------->
-				<div class="e-type">Web Development</div>
-				<!--name------->
-				<img src="images/extentions.png">
-			</div>
-			<!--text----------------->
-			<div class="e-b-text">
-				<a href="#">HoverXchange</a>
-			</div>
-		</div>
-	</div>
-</section>
-<footer>
-	<p>&copy; 2020 Lan Dao</p>
-</footer>
-</section>
+		</section>
+	</section>
+	<footer>
+		<p>&copy; 2020 Lan Dao</p>
+	</footer>
 
 
-<script type="text/javascript" src="js/JQuery3.3.1.js"></script>
-<script type="text/javascript">
 
-/*Responsive Navigation*/
-$(document).ready(function(){
-	$('.toggle').click(function(){
-		$('.toggle').toggleClass('active')
+	<script type="text/javascript" src="js/JQuery3.3.1.js"></script>
+	<script type="text/javascript">
 
-		$('nav ul').toggleClass('active-menu')
+		/*Responsive Navigation*/
+		$(document).ready(function(){
+			$('.toggle').click(function(){
+				$('.toggle').toggleClass('active')
+
+				$('nav ul').toggleClass('active-menu')
 
 
-	})
-});
-</script>
+			})
+		});
+	</script>
 </body>
 </html>

@@ -10,6 +10,7 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css"/>
 	<!--Google Fonts-------->
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,700;1,100&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Pattaya&display=swap" rel="stylesheet">
 	<!--using FontAwesome---------------->
@@ -41,60 +42,36 @@
 			</div>
 		</nav>
 
-<!--contact-form------------------->
-<section id="contact-form">
-	<div class="c-heading">
-		<h1>Let's talk!</h1>
-		<h1 style="color:#DCDCDC;font-size:17px;font-family:'Roboto', sans-serif; letter-spacing: 2px;">Please email me at <a href="mailto:ldao@millikin.edu">ldao@millikin.edu</a> or fill in the form so I know how to reach you 😊</h1>
-	</div>
+		<!--contact-form------------------->
+		<section id="body-template">
+			<h1 class="headlind">Let's talk!</h1>
 
-	<form>
-		<!--left--------------------------------------->
-		<div class="contact-left">
-			<h1 class="c-l-heading"><font style="border-bottom: 3px solid #f76c6c;">Writ</font>e me</h1>
-			<!--name-------->
-			<div class="f-name">
-				<font>Name</font>
-				<input type="text" placeholder="Full Name"/>
+			<div class="contact-email">
+				<a style="font-weight: 900;" href="mailto:ldao@millikin.edu" class="underline-left">ldao@millikin.edu</a>
 			</div>
-			<!--email-------->
-			<div class="f-email">
-				<font>Email</font>
-				<input type="email" placeholder="Example@gmail.com"/>
-			</div>
-
-		</div>
-		<!--right------------------------------------------->
-		<div class="contact-right">
-			<!--message-------->
-			<div class="message">
-				<font>Message</font>
-				<textarea name="message" rows="5" cols="20" placeholder="Write Message..."></textarea>
-			</div>
-			<!--submit-btn------------>
-			<button>submit</button>
-		</div>
-	</form>
-</section>
-<footer>
-	<p>&copy; 2020 Lan Dao</p>
-</footer>
-</section>
+			<div class="line"></div>
+			<p style="font-size:18px; weight: 300; color: #DCDCDC;">I love to develop web and application. I also like to design stuff. If you're interested in what I do, <a href="mailto:ldao@millikin.edu"><b style="color: #DCDCDC !important"><u>say hi!</u></b></a> 😊</p>
+		</section>
+	</section>
+	<footer>
+		<p>&copy; 2020 Lan Dao</p>
+	</footer>
 
 
-<script type="text/javascript" src="js/JQuery3.3.1.js"></script>
-<script type="text/javascript">
 
-/*Responsive Navigation*/
-$(document).ready(function(){
-	$('.toggle').click(function(){
-		$('.toggle').toggleClass('active')
+	<script type="text/javascript" src="js/JQuery3.3.1.js"></script>
+	<script type="text/javascript">
 
-		$('nav ul').toggleClass('active-menu')
+		/*Responsive Navigation*/
+		$(document).ready(function(){
+			$('.toggle').click(function(){
+				$('.toggle').toggleClass('active')
+
+				$('nav ul').toggleClass('active-menu')
 
 
-	})
-});
-</script>
+			})
+		});
+	</script>
 </body>
 </html>
