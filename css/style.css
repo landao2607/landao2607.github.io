@@ -106,13 +106,11 @@ nav{
 }
 
 .menu li a:hover{
-	border: 1px solid #DBB04AFF; /*yellow border*/
-	color:#FFF!important; /*white text*/
+	color:#DBB04AFF!important; /*yellow text*/
 }
 
 .current {
-	border: 1px solid #DBB04AFF; /*yellow border*/
-	color:#FFF!important;/*white text*/
+	color:#DBB04AFF!important;/*yellow text*/
 }
 
 @media screen and (max-width: 900px) {
