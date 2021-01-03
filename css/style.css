@@ -583,6 +583,13 @@ footer {
 		background-color:rgba(27,29,32,0.15);
 	}
 
+	.social a{
+		margin: 0;
+	}
+	.social i{
+		font-size: 12px;
+	}
+
 	.p-container{
 		grid-template-columns:1fr 1fr;
 		grid-template-rows:auto;
@@ -610,60 +617,21 @@ footer {
 }
 /*End of Responsive for Portfolio Image Grid*/
 
-@media(max-width:600px){
-	.p-container{
-		grid-template-columns:1fr ;
-		grid-template-rows: auto;}
-		.c-b-heading{
-			font-size: 1.2rem;
-			text-align: center;
-			margin: 0px 10%;
-		}
-		.name{
-			width:60%;
-		}
-		.social{
-			left: 30px;
-			transform: translateX(-10px);
-		}
-	}
+/* The Close Button */
+.close {
+	position: absolute;
+	top: 15px;
+	right: 35px;
+	color: #f1f1f1;
+	font-size: 40px;
+	font-weight: bold;
+	transition: 0.3s;
+}
 
-	#myImg {
-		border-radius: 5px;
-		cursor: pointer;
-		transition: 0.3s;
-	}
+.close:hover,
+.close:focus {
+	color: #bbb;
+	text-decoration: none;
+	cursor: pointer;
+}
 
-	#myImg:hover {opacity: 0.7;}
-
-
-
-	@keyframes zoom {
-		from {transform:scale(0)}
-		to {transform:scale(1)}
-	}
-
-	/* The Close Button */
-	.close {
-		position: absolute;
-		top: 15px;
-		right: 35px;
-		color: #f1f1f1;
-		font-size: 40px;
-		font-weight: bold;
-		transition: 0.3s;
-	}
-
-	.close:hover,
-	.close:focus {
-		color: #bbb;
-		text-decoration: none;
-		cursor: pointer;
-	}
-
-		/* 100% Image Width on Smaller Screens
-		@media only screen and (max-width: 700px){
-			.modal-content {
-				width: 100%;
-			}
-			}*/
