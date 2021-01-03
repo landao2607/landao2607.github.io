@@ -24,6 +24,7 @@ a{
 	}
 }
 
+
 #main{ /*for standard screen view*/
 	padding: 30px 50px;
 	position:relative;
@@ -111,12 +112,6 @@ nav{
 
 .current {
 	color:#DBB04AFF!important;/*yellow text*/
-}
-
-@media screen and (max-width: 900px) {
-	.logo{
-		font-size: 20px;
-	}
 }
 
 #body-template{
@@ -238,7 +233,7 @@ svg {
 
 .cv-btn:hover {
 	transition: 1s ease-in-out;
-	background: #f76c6c; /*red*/
+	background: #E54242; /*red*/
 }
 
 .cv-btn:hover svg {
@@ -507,7 +502,7 @@ footer {
 	}
 }
 
-@media(max-width:970px){
+@media(max-width:1200px){
 	#main{
 		background-image: none !important;
 	}
@@ -524,7 +519,15 @@ footer {
 	}
 }
 
-@media(max-width:900px){
+@media screen and (max-width: 900px) {
+	.logo{
+		font-size: 25px;
+		position: absolute;
+		left: 50%;
+		-webkit-transform: translateX(-50%); /*center logo*/
+		transform: translateX(-50%);
+	}
+
 	.toggle{
 		display:block;
 	}
@@ -532,7 +535,6 @@ footer {
 		content:'\f0c9';
 		font-family: fontAwesome;
 		line-height: 0px;
-		margin-left:-30px;
 		color: #DBB04AFF /*yellow menu bar in smaller screen*/
 	}
 	.toggle.active:before{
