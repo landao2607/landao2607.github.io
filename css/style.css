@@ -413,6 +413,82 @@ svg {
 	}
 }
 
+/*---------------SHOWER PLAYLISTS PAGE--------------*/
+#portfolio-about{
+	width:100%;
+	height: 100vh;
+	background-color:#19181a; /*19181a*/
+	box-sizing: border-box;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 50px 8% 50px 8%;
+	position: relative;
+}
+.left {
+	float:left;
+	width:20%;
+	padding:0;
+	min-height:100%;
+	
+	vertical-align: center;
+	position: relative;
+}
+
+.right {
+	float:left;
+	width:70%;
+	padding:0;
+	min-height:100%;
+	
+}
+
+.small-section {
+	float:left;
+	margin-right: 170px;
+	padding:0;
+	min-height:100%;
+	
+}
+
+.left i{
+	color: #DCDCDC; /*white*/
+	font-size: 25px;
+}
+.left i:hover {
+	color: #DBB04AFF; /*yellow*/
+	transition: all ease 0.5s;
+	cursor: pointer;
+}
+
+.portfolio-about-text{
+	font-family: 'Poppins', sans-serif;
+	position: absolute; /*vertically align*/
+  	top: 50%; /*vertically align*/
+  	transform: translate(0, -50%); /*vertically align*/
+}
+.portfolio-about-text h1{
+	font-size: 30px;
+	color:#DCDCDC;
+	font-weight: 300;
+}
+.portfolio-about-text h2{
+	font-size: 20px;
+	color:#DBB04AFF;
+	font-weight: 900;
+	
+}
+.portfolio-about-text h1,h2{
+	margin: 0px;
+	padding: 0px;
+}
+.portfolio-about-text p{
+	font-size: 15px;
+	color: #DCDCDC;
+	
+}
+
+
 /*---------------CONTACT PAGE--------------*/
 .contact-email {
 	margin-top: 60px;
