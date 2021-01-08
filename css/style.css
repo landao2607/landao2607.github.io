@@ -477,14 +477,7 @@ footer {
 
 /*-------------THE RESPONSIVE PART-----------*/
 @media(max-width:1190px){
-	#main{
-		background-size: 1150px !important;
-
-	}
-	#long-main {
-		background-size: 1150px !important;
-
-	}
+	
 	.name {
 		left: 10%;
 		top: 50%;
@@ -503,14 +496,7 @@ footer {
 }
 
 @media(max-width:1200px){
-	#main{
-		background-image: none !important;
-	}
-
-	#long-main {
-		background-size: 1150px !important;
-
-	}
+	
 
 	.name {
 		left: 50%;
