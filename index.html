@@ -9,7 +9,7 @@
 	<link rel="shortcut icon" href="images/LD_Logo.png">
 	<link rel="stylesheet" type="text/css" href="css/style.css"/>
 	<!--Google Fonts-------->
-	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;600;700;900&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;700&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Pattaya&display=swap" rel="stylesheet">
 	<!--using FontAwesome---------------->
@@ -19,7 +19,7 @@
 </head>
 
 <body>
-	<section id="main">
+	<section id="long-main">
 		<!--navigation-------------------------------->
 		<nav>
 			<!--logo--->
@@ -40,15 +40,32 @@
 			</div>
 		</nav>
 
-		<!--name---------->
-		<div class="name">
-			<!--wave emoji-->
-			<p style="font-size:30px"><span class="wave">👋</span></p>
-			<!--intro---->
-			<h1>Hello! My name is Lan. I'm a junior in college. </h1>
-			<!--details----------->
-			<p class="details">I love music, travel, and good coffee.</p>
-			<!--cv button----------------->
+		<section id="about-body-template-1">
+			<!--heading-------------->
+			<p class="headline">Hey there! <span class="wave" style="font-size:70px">👋</span></p>
+			<p class="sub-headline">Nice to meet you.</p>	
+		</section>
+
+		<!--Scroll arrow -->
+		<div id="wrapper">
+			<div id="wrapper-inner">
+				<div id="scroll-down">
+					<span class="arrow-down">
+						<!-- css generated icon -->
+					</span>
+					<span id="scroll-title">Get to know me</span>
+				</div>
+			</div>
+		</div>
+
+		<section id="about-body-template-2">
+			<!--heading-------------->
+			<h1 class="headline">I'm Lan Dao. My playground is anything</h1>
+			<h1 class="headline text-outline">web/app design and development.</h1>
+			<h1 class="headline">I can do the coding and also the designing.</h1>	
+			<p class="sub-headline-1">I'm a junior in college with double major in Information Systems and Computer Science. I'm learning and at the same time applying my knowledge in personal projects.</p>
+
+			<!--cv button---------------->
 			<div class="cv-container">
 				<div class="cv-center">
 					<button class="cv-btn" onclick="window.open('LanDao_Resume.pdf', '_blank')">
@@ -60,27 +77,35 @@
 					</button>
 				</div>
 			</div>
-		</div>
 
-		<!--learn more-->
-		<div class="learnmore">
-			<ul>
-			    <li>
-			      <a class='animated-arrow' href="projects.html">
-			        <span class='the-arrow -left'>
-			          <span class='shaft'></span>
-			        </span>
-			        <span class='learnmore-main'>
-			          <span class='text'>My work</span>
-			          <span class='the-arrow -right'>
-			            <span class='shaft'></span>
-			          </span>
-			        </span>
-			      </a>
-			    </li>
-			</ul>
-		</div>
-		
+			<!--learn more--
+			<div class="learnmore">
+				<ul>
+				    <li>
+				      <a class='animated-arrow' href="projects.html">
+				        <span class='the-arrow -left'>
+				          <span class='shaft'></span>
+				        </span>
+				        <span class='learnmore-main'>
+				          <span class='text'>See My Projects</span>
+				          <span class='the-arrow -right'>
+				            <span class='shaft'></span>
+				          </span>
+				        </span>
+				      </a>
+				    </li>
+				</ul>
+			</div>
+		-->
+			<p class="sub-headline-2 text-outline">Random facts</p>
+			<p class="sub-headline-2" style="margin-left: 8px; "> about me:</p>
+			<p class="sub-headline-3">
+				I was born and raised in Hanoi, Vietnam. But I'm currently living and studying in the U.S.<br>
+				I love meeting new friends from different cultures.<br>
+				A good cup of coffee can never go wrong.
+			</p>
+		</section>
+
 	</section>
 	<footer>
 		<p>&copy; 2021 Lan Dao</p>
