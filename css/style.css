@@ -441,7 +441,7 @@ nav{
 }
 
 #about-body-template-2 .headline {
-	width: 75%;
+	width: 65%;
 	color:#DCDCDC; /*white*/
 	font-size: 4.7rem;
 	font-weight: 700;
@@ -449,8 +449,9 @@ nav{
 	text-align: left;
 	float: right;
 	margin: 0px 0px;
-	display: inline-block;
+	display: inline-block; ;
 }
+
 
 #about-body-template-2 .sub-headline-1{
 	width: 40%;
@@ -476,7 +477,7 @@ nav{
 }
 
 #about-body-template-2 .sub-headline-3{
-	width: 50%;
+	width: 60%;
 	color:#a6a6a6; /*grey*/
 	font-size: 20px;
 	font-weight: 700;
@@ -492,6 +493,7 @@ nav{
   .text-outline{
     -webkit-text-stroke: 1px #DCDCDC;
     -webkit-text-fill-color: #19181a;
+    display: inline;
   }
 }
 
@@ -1057,7 +1059,11 @@ svg {
 	width: 100px;
 	height: 50px;
 	border-bottom: 3px solid #DCDCDC;
-	position: relative;
+	position: relative;	
+}
+
+.text-outline:hover {
+	font-style: italic;
 }
 
 /*---------------FOOTER--------------*/
