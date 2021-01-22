@@ -31,10 +31,6 @@ a{
 	width:100%;
 	height: 93vh;
 	box-sizing: border-box;
-	background-size: 1330px;
-	background-position: right bottom;
-	background-repeat: no-repeat;
-	background-image: url("");
 	background-color: #19181a; /*dark grey*/
 }
 
@@ -43,10 +39,6 @@ a{
 	position:relative;
 	width:100%;
 	box-sizing: border-box;
-	background-size: 1330px;
-	background-position: right bottom;
-	background-repeat: no-repeat;
-	background-image: url("");
 	background-color: #19181a; /*dark grey*/
 }
 nav{
@@ -496,6 +488,9 @@ nav{
     display: inline;
   }
 }
+.text-outline:hover {
+	font-style: italic;
+}
 
 #portfolio-body-template{
 	width:100%;
@@ -926,77 +921,93 @@ svg {
 }
 
 /*---------------SHOWER PLAYLISTS PAGE--------------*/
-#portfolio-about{
-	width:100%;
-	height: 100vh;
-	background-color:#19181a; /*19181a*/
-	box-sizing: border-box;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	padding: 50px 8% 50px 8%;
-	position: relative;
-}
-.left {
-	float:left;
-	width:20%;
-	padding:0;
-	min-height:100%;
-	vertical-align: center;
-	position: relative;
-}
-
-.right {
-	float:left;
-	width:70%;
-	padding:0;
-	min-height:100%;
-	
-}
-
-.small-section {
-	float:left;
-	margin-right: 170px;
-	padding:0;
-	min-height:100%;
-	
-}
-
-.left i{
+#portfolio-body-template i{ /*the back arrow*/
 	color: #DCDCDC; /*white*/
 	font-size: 25px;
 }
-.left i:hover {
+
+#portfolio-body-template i:hover{
 	color: #DBB04AFF; /*yellow*/
 	transition: all ease 0.5s;
 	cursor: pointer;
 }
 
-.portfolio-about-text{
-	font-family: 'Poppins', sans-serif;
-	position: absolute; /*vertically align*/
-	top: 50%; /*vertically align*/
-	transform: translate(0, -50%); /*vertically align*/
+/* Create two equal columns that floats next to each other */
+.column-1 {
+  float: left;
+  width: 40%;
+  padding: 10px;
 }
-.portfolio-about-text h1{
-	font-size: 30px;
+
+.column-2 {
+  float: left;
+  width: 55%;
+  padding: 10px;
+}
+
+.column-2-small {
+  float: left;
+  width: 29%;
+  padding: 10px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column-1 h1{
+	font-size: 50px;
 	color:#DCDCDC;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 500;
+}
+
+.column-1 h2{
+	font-size: 25px;
+	color:#DCDCDC;
+	font-family: 'Source Code Pro', monospace;
+}
+
+.column-2 h2{
+	font-size: 17px;
+	color:#DCDCDC;
+	font-family: 'Poppins', sans-serif;
 	font-weight: 300;
 }
-.portfolio-about-text h2{
-	font-size: 20px;
-	color:#DBB04AFF;
-	font-weight: 900;
-	
+
+.column-2 a{
+	font-size: 17px;
+	color:#DCDCDC;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 300;
+	font-style: italic;
 }
-.portfolio-about-text h1,h2{
-	margin: 0px;
-	padding: 0px;
+
+.column-2-small h2{
+	font-size: 17px;
+	color:#DCDCDC;
+	font-family: 'Source Code Pro', monospace;
 }
-.portfolio-about-text p{
-	font-size: 15px;
-	color: #DCDCDC;
-	font-weight: 200;
+
+.column-2-small p{
+	font-size: 17px;
+	color:#DCDCDC;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 300;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    width: 100%;
+    text-align: center;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 0 auto;
+    padding: 10px;
 }
 
 .next {
@@ -1060,10 +1071,6 @@ svg {
 	height: 50px;
 	border-bottom: 3px solid #DCDCDC;
 	position: relative;	
-}
-
-.text-outline:hover {
-	font-style: italic;
 }
 
 /*---------------FOOTER--------------*/

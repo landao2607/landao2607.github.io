@@ -12,6 +12,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;900&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;700&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Pattaya&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
 	<!--using FontAwesome---------------->
 	<script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script> <!--for animation-->
@@ -19,58 +20,79 @@
 
 <body>
 	<!--main------------------------>
-	<section id="portfolio-about">
-		<div class="left">
-			<a href="portfolio.html"><i class="fas fa-arrow-left"></a></i>
-			<div class="portfolio-about-text">
-				<h2>Gentle Monster</h2>
-				<p>Intro</p>
+	<section id="long-main">
+		<!--navigation-------------------------------->
+		<nav>
+			<!--logo--->
+			<a href="index.html" class="logo">LD</a>
+			<!--menu--------->
+			<div class="toggle"></div>
+			<ul class="menu">
+				<li class="active"><a href="index.html">About</a></li>
+				<li><a href="projects.html">Projects</a></li>
+				<li><a class="current" href="portfolio.html">Portfolio</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+			<!--social-->
+			<div class="social">
+				<a href="#"><a target="_blank" href="mailto:ldao@millikin.edu"><i class="far fa-envelope"></i></a>
+				<a href="#"><a target="_blank" href="https://github.com/landao2607" rel="http://www.github.com/"><i class="fab fa-github"></i></a>
+				<a href="#"><a target="_blank" href="https://www.linkedin.com/in/lanpdao/" rel="http://www.linkedin.com/"><i class="fab fa-linkedin"></i></a>
 			</div>
-		</div>
-		<div class="right">
-			<div class="portfolio-about-text">
-				<h1>Brand Poster Design for Gentle Monster Sunglasses.</h1>
-			</div>
-		</div>
-	</section>
+		</nav>
 
-	<section id="portfolio-about">
-		<div class="left">
-			<div class="portfolio-about-text">
-				<h2>Gentle Monster</h2>
-				<p>Details</p>
-			</div>
-		</div>
-		<div class="right">
-			<div class="portfolio-about-text">
-				<div class="small-section">
-					<h2 style="font-size: 14px;font-weight: 700;">Project Type</h2>
-					<p style="font-weight: 500;">Personal</p>
-					<p style="font-weight: 500;">Brand Poster</p>
-				</div>
-				<div class="small-section">
-					<h2 style="font-size: 14px;font-weight: 700;">Tools</h2>
-					<p style="font-weight: 500;">Adobe Illustration</p>
-				</div>
-				<div class="small-section">
-					<h2 style="font-size: 14px;font-weight: 700;">Date</h2>
-					<p style="font-weight: 500;">October 2020</p>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<section id="long-main">	
 		<section id="portfolio-body-template">
-			<img src="images/LD_GentleMonster.jpg" width="100%" height="100%" />
+			<a href="portfolio.html"><i class="fas fa-arrow-left"></a></i>
+			<div class="row">
+				<div class="column-1">
+					<h1>Gentle Monster</h1>
+				</div>
+				<div class="column-2">
+					<div class="column-2-small">
+						<h2>project type /</h2>
+						<p>Personal</p>
+						<p>Poster Design</p>
+					</div>
+					<div class="column-2-small" style="margin-left: 15px;">
+						<h2>tools /</h2>
+						<p>Adobe Illustrator</p>
+					</div>
+					<div class="column-2-small">
+						<h2>date /</h2>
+						<p>October 2020</p>
+					</div>
+				</div>
+			</div>
+			<hr/>
+			<div class="row">
+				<div class="column-1">
+					<h2>about the work</h2>
+				</div>
+				<div class="column-2">
+					<h2>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="column-1">
+					<h2>featured in</h2>
+				</div>
+				<div class="column-2">
+					<h2>Millikin University Arts Technology & Administration Department | 2020 Arts Technology Expo</h2>
+					<a href="https://www.facebook.com/millikinartstech.admin/posts/194731998892562"><u>Check it out</u></a>
+				</div>
+			</div>
+			<img src="images/LD_GentleMonster.jpg" width="100%" height="100%" style="margin-top:40px;"/>
 		</section>
-	</section>
-	<footer>
-		<p>&copy; 2021 Lan Dao</p>
-	</footer>
 
-	<script type="text/javascript" src="js/JQuery3.3.1.js"></script>
-	<script type="text/javascript"></script>
+
+	</section>
+
+<footer>
+	<p>&copy; 2021 Lan Dao</p>
+</footer>
+
+<script type="text/javascript" src="js/JQuery3.3.1.js"></script>
+<script type="text/javascript"></script>
 
 </body>
 </html>
