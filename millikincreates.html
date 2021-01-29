@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Projects | Lan Dao</title>
+	<title>Millikin Creates | Lan Dao</title>
 	<meta http-equiv="X-UA-Compatible" content="IE-edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!--title-icon--------->
@@ -12,6 +12,8 @@
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;900&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;700&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Pattaya&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@500&display=swap" rel="stylesheet">
 	<!--using FontAwesome---------------->
 	<script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script> <!--for animation-->
@@ -19,7 +21,7 @@
 
 <body>
 	<!--main------------------------>
-	<section id="main">
+	<section id="long-main">
 		<!--navigation-------------------------------->
 		<nav>
 			<!--logo--->
@@ -40,54 +42,54 @@
 			</div>
 		</nav>
 
-		<!--Projects-------------------->
 		<section id="portfolio-body-template">
-			<!--heading-------------->
-			<h1 class="headline">Projects.</h1>
+			<a href="projects.html"><i class="fas fa-arrow-left"></a></i>
+			<div class="row">
+				<div class="column-1">
+					
+				</div>
+				<div class="column-2">
+					<h1>Millikin Creates</h1>
+					<hr style="width: 10%; float: left;"/>
+				</div>
+			</div>
 			
-			<div class="project-list">
-				<h2>
-					<a href="hoverxchange.html" class="flip-animate"><sup>01</sup><span data-hover="Web Development">HoverXchange</span></a>
-				</h2>
-				<h2>
-					<a href="personalwebsite.html" class="flip-animate"><sup>02</sup><span data-hover="Web Development">This website, ofc :)</span></a>
-				</h2>
-				<h2>
-					<a href="budgetify.html" class="flip-animate"><sup>03</sup><span data-hover="App Development">budgetify</span></a>
-				</h2>
-				<h2>
-					<a href="cie.html" class="flip-animate"><sup>04</sup><span data-hover="Data Analysis">CIE</span></a>
-				</h2>
-				<h2>
-					<a href="mupc.html" class="flip-animate"><sup>05</sup><span data-hover="TBA">MUPC</span></a>
-				</h2>
-				<h2>
-					<a href="millikincreates.html" class="flip-animate"><sup>06</sup><span data-hover="TBA">Millikin Creates</span></a>
-				</h2>
-				
+			<div class="row">
+				<div class="column-1">
+					<h2 style="font-size: 20px;">Duration</h2>
+					<h3>January 2021 - present</h3>
+					<br>
+					<h2 style="font-size: 20px;">Role</h2>
+					<h3>TBA</h3>
+					<br>
+					<h2 style="font-size: 20px;">Achievements</h2>
+					<h3>TBA</h3>
+				</div>
+				<div class="column-2">
+					<h2>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</h2>
+				</div>
+			</div>
+			<img src="images/LD_FullShowerPlaylists.jpg" width="100%" height="100%" style="margin-top:40px;"/>
+
+			<!--Prev/Next Arrows-->
+			<div id="arrow_2" class="arrow-wrapper">
+				<div class="arrow arrow--left">
+					<a href="personalwebsite.html"><span>Prev</span></a>
+				</div>
+
+				<div class="arrow arrow--right">
+					<a href="cie.html"><span>Next</span></a>
+				</div>
 			</div>
 		</section>
 	</section>
-	
-	<footer>
-		<p>&copy; 2021 Lan Dao</p>
-	</footer>
 
+<footer>
+	<p>&copy; 2021 Lan Dao</p>
+</footer>
 
+<script type="text/javascript" src="js/JQuery3.3.1.js"></script>
+<script type="text/javascript"></script>
 
-	<script type="text/javascript" src="js/JQuery3.3.1.js"></script>
-	<script type="text/javascript">
-
-		/*Responsive Navigation*/
-		$(document).ready(function(){
-			$('.toggle').click(function(){
-				$('.toggle').toggleClass('active')
-
-				$('nav ul').toggleClass('active-menu')
-
-
-			})
-		});
-	</script>
 </body>
 </html>

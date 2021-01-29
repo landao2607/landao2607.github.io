@@ -653,6 +653,21 @@ a.flip-animate:hover span:before, a.flip-animate:focus span:before {
 	font-size: 14px;
 }
 
+.column-2 h1 {
+  font-size: 70px;
+  color:#DCDCDC;
+  font-family: 'Frank Ruhl Libre', serif;
+  font-style: italic;
+  font-weight: 500;
+}
+
+.column-1 h3 {
+  font-size: 14px;
+  color:#DCDCDC;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+}
+
 /*--------------------------------------PORTFOLIO PAGE----------------------------------*/
 .portfolio-container {
 	display: grid;
@@ -783,9 +798,10 @@ a.flip-animate:hover span:before, a.flip-animate:focus span:before {
 }
 
 .column-1 h1{
-	font-size: 50px;
+	font-size: 60px;
 	color:#DCDCDC;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Frank Ruhl Libre', serif;
+  font-style: italic;
 	font-weight: 500;
 }
 
@@ -796,7 +812,7 @@ a.flip-animate:hover span:before, a.flip-animate:focus span:before {
 }
 
 .column-2 h2{
-	font-size: 17px;
+	font-size: 15px;
 	color:#DCDCDC;
 	font-family: 'Poppins', sans-serif;
 	font-weight: 300;
