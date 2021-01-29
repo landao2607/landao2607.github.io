@@ -1150,15 +1150,20 @@ footer {
   }
 
   #about-body-template-2 .headline { /*index page*/
-    width: 65%;
+    width: 85%;
     color:#DCDCDC; /*white*/
     font-size: 2.5rem;
   }
 
   #about-body-template-2 .sub-headline-1{ /*index page*/
-    width: 40%;
+    width: 60%;
     font-size: 17px;
     margin-top: 10vh;
+  }
+
+  .cv-container {
+    margin-left: 41%;
+    display: inline-block;
   }
 
   #about-body-template-2 .sub-headline-2{ /*index page*/
