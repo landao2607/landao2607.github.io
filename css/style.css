@@ -544,7 +544,7 @@ nav{
 
 .cv-container {
 	margin-left: 61%;
-	display: inline-block;
+	display: none;
 }
 
 .cv-center {
