@@ -672,6 +672,7 @@ a.flip-animate:hover span:before, a.flip-animate:focus span:before {
 hr{
   width: 10%; 
   float: left;
+  height: 2px;
 }
 
 /*--------------------------------------PORTFOLIO PAGE----------------------------------*/
