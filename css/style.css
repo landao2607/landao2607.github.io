@@ -669,12 +669,6 @@ a.flip-animate:hover span:before, a.flip-animate:focus span:before {
   font-weight: 300;
 }
 
-hr{
-  width: 10%; 
-  float: left;
-  height: 2px;
-}
-
 /*--------------------------------------PORTFOLIO PAGE----------------------------------*/
 .portfolio-container {
 	display: grid;
